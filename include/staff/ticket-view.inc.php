@@ -858,8 +858,7 @@ if ($errors['err'] && isset($_POST['a'])) {
                     &nbsp;<span class='error'>*&nbsp;<?php echo $errors['note_status_id']; ?></span>
                 </td>
             </tr>
-            <?php if ($cfg->isThreadTime()) {
-            if($ticket->isOpen()) { ?>
+            <?php if ($cfg->isThreadTime()) { ?>
             <tr>
                 <td width="120">
                     <label><strong>Time Spent:</strong></label>
@@ -892,7 +891,7 @@ if ($errors['err'] && isset($_POST['a'])) {
                     <?php } ?>
                 </td>
             </tr>
-            <?php }} ?>
+            <?php } ?>
         </table>
 
        <p style="text-align:center;">
